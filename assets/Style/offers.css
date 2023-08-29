@@ -1,0 +1,87 @@
+.head {
+    padding-top: 75px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    background-color: rgb(243,245,250);
+}
+
+.head .container span:first-child {
+    color: #ffa500;
+}
+
+.head .container span:first-child:after {
+    content: " / ";
+    color: black;
+}
+
+.head .container h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(55,81,126);
+}
+
+/* end head */
+
+/* start offers */
+
+.offers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.offers .container .card {
+    margin-bottom: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #dfdfdf;
+}
+
+.offers .container .card img{
+    width: 100%;
+}
+
+.offers .container .card .content {
+    padding: 20px;
+}
+
+.offers .container .card .content h2 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0 20px 0;
+}
+
+.offers .container .card .content p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #282529;
+}
+
+.offers .container .card .content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .offers .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .offers .container .card {
+        flex-basis: calc(98% / 2);
+    }
+}
+
+@media (min-width: 992px) {
+    .offers .container .card {
+        flex-basis: calc(98% / 3);
+    }
+}
+
+/* end offers */
